@@ -24,4 +24,6 @@ Copyright © 2014
 License: Apache/BSD/MIT/GPL.   
 
 
+Below is a screenshot of the library's demo and instruction. Click on the image for a larger view.
+
 <img src="https://cloud.githubusercontent.com/assets/993980/4730708/06e01fda-599e-11e4-9242-2445fff8730a.png">
