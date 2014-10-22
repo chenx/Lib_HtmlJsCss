@@ -19,5 +19,5 @@ This entire package can be downloaded here
 
 Author: X. Chen.   
 Since: 10/20/2014   
-Copyright © 10/20/2014   
+Copyright © 2014   
 License: Apache/BSD/MIT/GPL.   
