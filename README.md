@@ -22,3 +22,6 @@ Author: X. Chen.
 Since: 10/20/2014   
 Copyright © 2014   
 License: Apache/BSD/MIT/GPL.   
+
+
+<img src="https://cloud.githubusercontent.com/assets/993980/4730708/06e01fda-599e-11e4-9242-2445fff8730a.png">
