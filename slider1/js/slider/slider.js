@@ -2,8 +2,10 @@
  * This javascript file is part of an image slider library.
  *
  * Configure: change the values below according to your needs -
- *   - slider_ct int, number of images to swap.
- *   - slider_w  px,  width of an image (each image should have equal width).
+ *   - slider_ct int,        Number of images to swap.
+ *   - slider_w  px,         Width of an image (each image should have equal width).
+ *   - slider_auto_interval, Automatic slide interval (in ms). If <= 0, No automatic slide.
+ *   - slider_show_bullets,  Whether show bullets. 1 - show, 0 - hide.
  *
  * @By: X. Chen
  * @Since: 10/20/2014
@@ -63,7 +65,6 @@ $(document).ready(function() {
     }
 
     function bullet_onclick(p) {
-        // Clear all bullets to non-selected mode.
         $('#slide1_controller').children('span').removeClass("select");
 
         // set current bullet class.
@@ -74,7 +75,6 @@ $(document).ready(function() {
         $("#slide1_images").css("transform","translateX(" + p + "px)");
     }
 
-    // Initialize the controller bar.
     function init_slide1_controller(slider_ct) {
         $("#slide1_controller").append(
             '<span style="right:' + (slider_ct * 30) + 'px;" class="select"></span>');
