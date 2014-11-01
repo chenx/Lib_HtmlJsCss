@@ -6,6 +6,7 @@
  *   - slider_w  px,         Width of an image (each image should have equal width).
  *   - slider_auto_interval, Automatic slide interval (in ms). If <= 0, No automatic slide.
  *   - slider_show_bullets,  Whether show bullets. 1 - show, 0 - hide.
+ *   - slider_p0,            Current position of slider (index of current image).
  *
  * @By: X. Chen
  * @Since: 10/20/2014
