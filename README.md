@@ -4,6 +4,10 @@ Lib_HtmlJsCss
 Library of html/js/css web components.
 
 
+Searchbox
+------
+
+Search box similar to on Apple website, implemented in CSS.
 
 Slider Library 1
 ------
