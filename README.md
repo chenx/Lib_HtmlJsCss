@@ -3,6 +3,12 @@ Lib_HtmlJsCss
 
 Library of html/js/css web components.
 
+dashQuery
+------
+
+<a href="https://github.com/chenx/Lib_HtmlJsCss/blob/master/dashQuery/dashQuery.js">dashQuery</a> is a minimum library, whose grammar is similar to jQuery. This helps to understand how jQuery is written from scratch.
+
+This library is from <a href="http://www.mikedoesweb.com/2012/creating-your-own-javascript-library/">http://www.mikedoesweb.com/2012/creating-your-own-javascript-library/</a>. 
 
 Searchbox
 ------
