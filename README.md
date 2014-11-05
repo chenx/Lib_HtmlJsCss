@@ -19,7 +19,7 @@ Slider Library 1
 This is a light-weighted, easy to use and configure image slider library. It's written in html/js/css and uses jquery.   
 
 Requirement: jquery 1.8 or above.   
-All the files are in ./js/slider/. See ./js/slider/README.txt.   
+All the files are in <a href="https://github.com/chenx/Lib_HtmlJsCss/blob/master/slider1/js/slider/">/js/slider/</a>. See <a href="https://github.com/chenx/Lib_HtmlJsCss/blob/master/slider1/js/slider/README.txt">/js/slider/README.txt</a>.   
 Assumption: banner image's width is 1000px. For different width, can adjust parameter in js file.   
 slider2.js supports 2 images. slider.js allows to add more images. In general, just use slider.js.   
 This does not support IE 8 and lower (disables slide animation for now).   
