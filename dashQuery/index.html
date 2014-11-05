@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript Library</title>
+<script type="text/javascript" src="dashQuery.js"></script>
+</head>
+<body>
+
+<p>
+Demonstrate the <a href="dashQuery.js">dashQuery</a> javascript library, which is a minimum library written from scratch,
+whose grammar is similar to jQuery.
+</p>
+
+<p>
+This helps to understand how jQuery is written. Although right now it passes id like _('id'), to use
+a syntax similar to jQuery: _('#id') or _('.class'), you just need to modify "function _(id)" to check the first
+letter of the given id string.
+</p>
+
+<p>
+This library is from <a href="http://www.mikedoesweb.com/2012/creating-your-own-javascript-library/">http://www.mikedoesweb.com/2012/creating-your-own-javascript-library/</a>.
+The page is also downloaded locally and compressed to <a href="CreateYourOwnJSLib.zip">CreateYourOwnJSLib.zip</a>.
+</p>
+
+<input type="button" value="Demonstration: Click to toggle" onclick="javascript: toggle();"/>
+
+
+<div id="hi">
+<h1>Hi</h1>
+</div>
+
+
+<script type="text/javascript">
+function toggle() {
+    _("hi").bgcolor('red').size(50, 100).toggle();
+}
+</script>
+
+
+</body>
+</html>
