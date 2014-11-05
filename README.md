@@ -12,7 +12,7 @@ dashQuery
 Searchbox
 ------
 
-Search box similar to on Apple website, implemented in CSS. Found from <a href="http://www.gbtags.com/gb/share/4093.htm">here</a>.
+Search box similar to on Apple website, implemented in CSS. Found from <a href="http://www.gbtags.com/gb/share/4093.htm">http://www.gbtags.com/gb/share/4093.htm</a>.
 
 
 Slider Library 1
