@@ -8,10 +8,12 @@ dashQuery
 
 <a href="https://github.com/chenx/Lib_HtmlJsCss/blob/master/dashQuery/dashQuery.js">dashQuery</a> is a minimum library, whose grammar is similar to jQuery. This helps to understand how jQuery is written from scratch. Found from <a href="http://www.mikedoesweb.com/2012/creating-your-own-javascript-library/">http://www.mikedoesweb.com/2012/creating-your-own-javascript-library/</a>. 
 
+
 Searchbox
 ------
 
 Search box similar to on Apple website, implemented in CSS. Found from <a href="http://www.gbtags.com/gb/share/4093.htm">here</a>.
+
 
 Slider Library 1
 ------
