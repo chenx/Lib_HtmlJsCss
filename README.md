@@ -8,6 +8,11 @@ dashQuery
 
 <a href="https://github.com/chenx/Lib_HtmlJsCss/blob/master/dashQuery/dashQuery.js">dashQuery</a> is a minimum javascript library, whose grammar is similar to jQuery. This helps to understand how jQuery is written from scratch. Found from <a href="http://www.mikedoesweb.com/2012/creating-your-own-javascript-library/">http://www.mikedoesweb.com/2012/creating-your-own-javascript-library/</a>. 
 
+Layout
+------
+
+* layout body contents horizontally
+* layout body contents both horizontally and vertically
 
 Searchbox
 ------
