@@ -14,6 +14,11 @@ Layout
 * layout body contents horizontally [<a href="https://github.com/chenx/Lib_HtmlJsCss/blob/master/layout/center_body_horizontal.html">source</a>]
 * layout body contents both horizontally and vertically [<a href="https://github.com/chenx/Lib_HtmlJsCss/blob/master/layout/center_body_hori_vert.html">source</a>]
 
+Midi
+-----
+* The MidiPlayer class can play midi directly in HTML5 javascript, without any plugin such as QuickTime.
+* index.html is a demonstration of how to use it.
+
 Searchbox
 ------
 
