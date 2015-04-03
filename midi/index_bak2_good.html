@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="stream.js"></script>
+		<script src="midifile.js"></script>
+		<script src="replayer.js"></script>
+		<script src="synth.js"></script>
+		<script src="audio.js"></script>
+		<script>
+			function loadRemote(path, callback) {
+				var fetch = new XMLHttpRequest();
+				fetch.open('GET', path);
+				fetch.overrideMimeType("text/plain; charset=x-user-defined"); // not work for IE.
+				fetch.onreadystatechange = function() {
+					if(this.readyState == 4 && this.status == 200) {
+						/* munge response into a binary string */
+						var t = this.responseText || "" ;
+						var ff = [];
+						var mx = t.length;
+						var scc= String.fromCharCode;
+						for (var z = 0; z < mx; z++) {
+							ff[z] = scc(t.charCodeAt(z) & 255);
+						}
+						callback(ff.join(""));
+					}
+				}
+				fetch.send();
+			}
+			
+
+        //http://stackoverflow.com/questions/2856513/how-can-i-trigger-an-onchange-event-manually
+        function fireEventEnded(o) {
+            if (document.createEvent) {
+                var evt = document.createEvent("HTMLEvents");
+                evt.initEvent("ended", false, true);
+                o.dispatchEvent(evt);
+            }
+            else if (document.createEventObject) {   // IE before version 9
+                //var myEvent = document.createEventObject();
+                //document.getElementById('music').fireEvent('onclick', myEvent);
+            }
+        }
+
+                var midiFile = null, synth, replayer, audio, ct = 0;
+
+		function play(file, o, loop) {
+                  if (o.value == 'stop') {
+                      audio.stop();
+                      o.value = 'play';
+                      return;
+                  }
+
+                  o.value = 'stop';
+                  if (loop) {
+                     if (window.addEventListener) {
+                         // Second time calling play() should not add another listener, otherwise o has
+                         // more and more listeners, and will fire n events the n-th time calling play.
+                         if (ct == 0) {
+                             o.addEventListener('ended', function() { // addEventListener not work for IE8.
+                                 //alert('ended');
+                                 ct += 1;
+                                 if (ct <= 100) {
+                                     replayer = Replayer(midiFile, synth); 
+                                     audio = AudioPlayer(replayer, o, loop);
+                                     document.getElementById('msg').innerHTML += 'loop ' + ct + '.';
+                                 }
+                             });
+                         }
+                     } else if (window.attachEvent) { // IE don't work anyway.
+                         //document.getElementById('music').attachEvent(
+                         //    'onclick', function(e) { alert('IE end'); }, true);
+                     }
+                  }
+
+	  	  loadRemote(file, function(data) {
+                      if (ct == 0) {
+	  	      midiFile = MidiFile(data);
+    	  	          synth = Synth(44100);
+                      }
+		      replayer = Replayer(midiFile, synth);
+		      audio = AudioPlayer(replayer, o, loop);
+                      //alert(audio.type); // webkit for firefox, chrome; flash for opera/safari.
+                      return audio;
+		  });
+		}
+            var v1, v2;
+		</script>
+	</head>
+	<body>
+	    <input type="button" value="play" id="m1" onclick="javascript: v1 = play('Saved.mid', this, true); "/> |
+  	    <a id='m2' href="#" onclick="javascript: v2 = play('Bach.mid', this, false);">Bach</a>
+        <br/><a href="javascript:v1.stop();">Stop 1</a>
+        <br/><a href="javascript:audio.stop();">Stop 2</a>
+                <br/><div id='msg'></div>
+	</body>
+</html>
+

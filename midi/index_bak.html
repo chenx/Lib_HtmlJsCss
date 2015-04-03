@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="stream.js"></script>
+		<script src="midifile.js"></script>
+		<script src="replayer.js"></script>
+		<script src="synth.js"></script>
+		<script src="audio.js"></script>
+		<script>
+			function loadRemote(path, callback) {
+				var fetch = new XMLHttpRequest();
+				fetch.open('GET', path);
+				fetch.overrideMimeType("text/plain; charset=x-user-defined"); // not work for IE.
+				fetch.onreadystatechange = function() {
+					if(this.readyState == 4 && this.status == 200) {
+						/* munge response into a binary string */
+						var t = this.responseText || "" ;
+						var ff = [];
+						var mx = t.length;
+						var scc= String.fromCharCode;
+						for (var z = 0; z < mx; z++) {
+							ff[z] = scc(t.charCodeAt(z) & 255);
+						}
+						callback(ff.join(""));
+					}
+				}
+				fetch.send();
+			}
+			
+			function play(file, o) {
+                 if (window.addEventListener) {
+                o.addEventListener('ended', function() { // addEventListener not work for IE8.
+                    //alert('ended');
+                    play(file, o);
+                    //audio = AudioPlayer(replayer, o);
+                });
+                 } else if (window.attachEvent) {
+                //document.getElementById('music').attachEvent('onclick', function(e) { alert('IE ended'); }, true);
+                 }
+
+//http://stackoverflow.com/questions/2856513/how-can-i-trigger-an-onchange-event-manually
+//if ("createEvent" in document) { // firefox. chrome. Opera. Safari.
+/*
+if (document.createEvent) {
+    var evt = document.createEvent("HTMLEvents");
+    evt.initEvent("ended", false, true);
+    o.dispatchEvent(evt);
+}
+else if (document.createEventObject) {   // IE before version 9
+    var myEvent = document.createEventObject();
+    document.getElementById('music').fireEvent('onclick', myEvent);
+}
+*/
+
+				loadRemote(file, function(data) {
+					midiFile = MidiFile(data);
+					synth = Synth(44100);
+					replayer = Replayer(midiFile, synth);
+					audio = AudioPlayer(replayer, o);
+                    //alert(audio.type); // webkit for firefox, chrome; flash for opera/safari.
+				});
+			}
+            var v1, v2;
+		</script>
+	</head>
+	<body>
+		<a href="#" onclick="javascript: v1 = play('Saved.mid', this);">Chopin - Waltz Op.61 (Minute Waltz)</a> |
+		<a id='music' href="#" onclick="javascript: v2 = play('Bach.mid', this);">Bach</a>
+        <br/><a href="javascript:v1.stop();">Stop 1</a>
+        <br/><a href="javascript:audio.stop();">Stop 2</a>
+	</body>
+</html>
+

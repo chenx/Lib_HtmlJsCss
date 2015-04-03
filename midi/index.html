@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
+    <script src="javascript/midi/stream.js"></script>
+    <script src="javascript/midi/midifile.js"></script>
+    <script src="javascript/midi/replayer.js"></script>
+    <script src="javascript/midi/synth.js"></script>
+    <script src="javascript/midi/audio.js"></script>
+    <script src="javascript/midi/MidiPlayer.js"></script>
+
+    <script type="text/javascript">
+    var mp1, mp2;
+    function init() {
+        mp1 = new MidiPlayer('Saved.mid', 'm1', true, 'msg');
+        mp1.setMaxLoop(5);
+        mp2 = new MidiPlayer('Bach_Badinerie.mid', 'm2', false, 'msg');
+    }
+    </script>
+
+</head>
+
+<body onload="javascript:init();">
+
+<h3>Demonstrate the MidiPlayer class: MidiPlayer.js</h3>
+<p>Created on: 4/1/2015
+<br/>Last Modified: 4/2/2015
+</p>
+
+<p><a href="javascript/midi/MidiPlayer.js"> The MidiPlayer class</a> is used to play midi by javascript, 
+without any plugin. It requires a HTML5 browser: firefox, chrome, safari, opera, IE10+.</p>
+
+<p>This depends on other 5 javascript files (audio.js, midifile.js, replayer.js, stream.js, synth.js) from [2], 
+which is a demo of [1]:<br/>
+<br/>[1] <a href="http://matt.west.co.tt/music/jasmid-midi-synthesis-with-javascript-and-html5-audio/">http://matt.west.co.tt/music/jasmid-midi-synthesis-with-javascript-and-html5-audio/</a>
+<br/>[2] <a href="http://jsspeccy.zxdemo.org/jasmid/">http://jsspeccy.zxdemo.org/jasmid/</a>
+</p>
+
+
+        <p>Button is used here. You can also use div, span etc.</p>
+        Save.mid: <input type="button" value="play" id="m1" onclick="javascript: mp1.play();"/><br/>
+        Bach.mid: <input type="button" value="play" id='m2' onclick="javascript: mp2.play();"/>
+        <span onclick="javascript: mp2.stop();" style="background-color:#eeeeee;">Stop Bach.mid</span>
+        <br/><br/>
+        <div id='msg'></div>
+</body>
+</html>
+

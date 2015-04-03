@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
+        <script src="stream.js"></script>
+        <script src="midifile.js"></script>
+        <script src="replayer.js"></script>
+        <script src="synth.js"></script>
+        <script src="audio.js"></script>
+        <script type="text/javascript">
+        function loadRemote(path, callback) {
+            var fetch = new XMLHttpRequest();
+            fetch.open('GET', path);
+            if (fetch.overrideMimeType) fetch.overrideMimeType("text/plain; charset=x-user-defined"); // not work for IE.
+            fetch.onreadystatechange = function() {
+                if(this.readyState == 4 && this.status == 200) {
+                    /* munge response into a binary string */
+alert(this.responseBody);
+                    var t = this.responseText || "" ;
+                    var ff = [];
+                    var mx = t.length;
+                    var scc= String.fromCharCode;
+                    for (var z = 0; z < mx; z++) {
+                        ff[z] = scc(t.charCodeAt(z) & 255);
+                    }
+                    callback(ff.join(""));
+                }
+            }
+            fetch.send();
+        }
+            
+
+    //http://stackoverflow.com/questions/2856513/how-can-i-trigger-an-onchange-event-manually
+    function fireEventEnded(o) {
+        if (document.createEvent) {
+            var evt = document.createEvent("HTMLEvents");
+            evt.initEvent("ended", false, true);
+            o.dispatchEvent(evt);
+        }
+        else if (document.createEventObject) {   // IE before version 9
+            var myEvent = document.createEventObject();
+            document.getElementById('music').fireEvent('onclick', myEvent);
+        }
+    }
+
+    if (typeof (MidiPlayer) == 'undefined') {
+        var MidiPlayer = function() {
+            this.midiFile = '';
+            this.synth = '';
+            this.replayer = '';
+            this.audio = null;
+            this.ct = 0;
+            this.started = false; // state of play started/stopped.
+        }
+
+        MidiPlayer.prototype.debug = function(msg) {
+            var o = document.getElementById('msg');
+            o.innerHTML += msg + '<br/>';
+        }
+
+        MidiPlayer.prototype.stop = function() {
+            this.started = false;
+            if (this.audio) { this.audio.stop(); }
+        }
+
+        MidiPlayer.prototype.play = function(file, o, loop) {
+            //if (o.value == 'stop') {
+            if (this.started) {
+                this.stop();
+                o.value = 'play';
+                return;
+            }
+
+            this.started = true;
+            o.value = 'stop';
+            var _this = this; // must be 'var', otherwise _this is public, and causes problem.
+
+            if (loop) {
+                if (window.addEventListener) {
+                    // Second time calling play() should not add another listener, otherwise o has
+                    // more and more listeners, and will fire n events the n-th time calling play.
+                    if (this.ct == 0) {
+                        o.addEventListener('ended', function() { // addEventListener not work for IE8.
+                            //_this.debug('4: ct = ' + _this.ct);
+                            //alert('ended');
+                            _this.ct += 1;
+                            if (_this.ct <= 100) {
+                                _this.replayer = Replayer(_this.midiFile, _this.synth); 
+                                _this.audio = AudioPlayer(_this.replayer, o, loop);
+                                _this.debug( file + ': loop ' + _this.ct );
+                            }
+                        }, false);
+                     }
+                 } else if (window.attachEvent) { // IE don't work anyway.
+                     //document.getElementById('music').attachEvent(
+                     //    'onclick', function(e) { alert('IE end'); }, true);
+                 }
+             } // end of: if (loop)
+
+             // Not how "this" is passed into the closure!
+             loadRemote(file, function(data) {
+                 if (_this.ct == 0) {
+                     _this.midiFile = MidiFile(data);
+                     _this.synth = Synth(44100);
+                 }
+                 _this.replayer = Replayer(_this.midiFile, _this.synth);
+                 _this.audio = AudioPlayer(_this.replayer, o, loop);
+                 //alert(audio.type); // webkit for firefox, chrome; flash for opera/safari.
+            });
+        }
+    }
+
+    var mp1, mp2;
+    function init() {
+        mp1 = new MidiPlayer();
+        mp2 = new MidiPlayer();
+    }
+        </script>
+    </head>
+    <body onload="javascript:init();">
+        Save.mid:
+        <input type="button" value="play" id="m1" onclick="javascript: mp1.play('Saved.mid', this, true); "/> <br/>
+        Bach.mid:
+        <input type="button" value="play" id='m2' onclick="javascript: mp2.play('Bach.mid', this, false);"/>
+        <br/><div id='msg'>msg</div>
+    </body>
+</html>
+
