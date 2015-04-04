@@ -14,7 +14,7 @@ Demo
 Usage
 -----
 
-You just need to include midi.min.js (uncompressed version: midi.js) in the head section of your html page:
+You just need to include <a href="https://github.com/chenx/Lib_HtmlJsCss/tree/master/midi/javascript">midi.min.js</a> (uncompressed version: <a href="https://github.com/chenx/Lib_HtmlJsCss/blob/master/midi/javascript/midi.js">midi.js</a>) in the head section of your html page:
 
     <script src="javascript/midi.min.js"></script>
 
