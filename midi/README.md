@@ -33,16 +33,16 @@ You also need to include da.swf in the same directory as your html file. This is
 For the rest, check the html source of the demo above. It's just a few lines of javascript.
 Features
 
-    Can specify these in constructor parameter list: midi, target, loop, maxLoop, end_callback.
+* Can specify these in constructor parameter list: midi, target, loop, maxLoop, end_callback.
     - midi: MIDI file path.
     - target: Target html element that this MIDI player is attached to.
     - loop: Optinoal. Whether loop the play. Value is true/false, default is false.
     - maxLoop: Optional. max number of loops to play when loop is true. Negative or 0 means infinite. Default is 1.
     - end_callback: Optional. Callback function when MIDI ends.
       e.g., use this to reset target button value from "stop" back to "play".
-    Can specify a debug div, to display debug message: setDebugDiv(debug_div_id).
-    Start/stop MIDI by: start(), stop().
-    If a MIDI started play, call start() again will stop and then restart from beginning.
+* can specify a debug div, to display debug message: setDebugDiv(debug_div_id).
+* Start/stop MIDI by: start(), stop().
+* If a MIDI started play, call start() again will stop and then restart from beginning.
 
 This depends on other 5 javascript files (audio.js, midifile.js, replayer.js, stream.js, synth.js) from [2][3], which is a demo of [1]. This is related to [4], which is a powerful tool to play MIDI in browser.
 
@@ -55,13 +55,13 @@ It can be a good idea to add MIDI support to HTML5 Audio tag, because MIDI files
 To-Do
 -----
 
-IE support, like how [5] does.
+IE support, like how [5] does.  
 
-[1] http://matt.west.co.tt/music/jasmid-midi-synthesis-with-javascript-and-html5-audio/
-[2] http://jsspeccy.zxdemo.org/jasmid/
-[3] https://github.com/gasman/jasmid
-[4] MIDI.js - Sequencing in Javascript.
-[5] MIDI.js - The 100% JavaScript MIDI Player using W3C Web Audio
-[6] Dynamically generating MIDI in JavaScript
+[1] http://matt.west.co.tt/music/jasmid-midi-synthesis-with-javascript-and-html5-audio/  
+[2] http://jsspeccy.zxdemo.org/jasmid/  
+[3] https://github.com/gasman/jasmid  
+[4] MIDI.js - Sequencing in Javascript.  
+[5] MIDI.js - The 100% JavaScript MIDI Player using W3C Web Audio  
+[6] Dynamically generating MIDI in JavaScript  
 
 
