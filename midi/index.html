@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
-    <script src="javascript/midi.js"></script>
+    <script src="javascript/midi.min.js"></script>
     <script type="text/javascript">
     var mp1, mp2;
 
@@ -67,8 +67,9 @@ Bach.mid: <input type="button" value="play" id='btn2' onclick="doPlay(mp2, this)
         
 <h3>Usage</h3>
 
-<p>You just need to include <a href="javascript/midi.js">midi.js</a> in the head section of your html page:<pre>
-    &lt;script src="javascript/midi.js"&gt;&lt;/script&gt;
+<p>You just need to include <a href="javascript/midi.min.js">midi.min.js</a> 
+(uncompressed version: <a href="javascript/midi.js">midi.js</a>) in the head section of your html page:<pre>
+    &lt;script src="javascript/midi.min.js"&gt;&lt;/script&gt;
 </pre>
 An alternative is to include all the files from which midi.js was made (Of course, the first way is much better):<pre>
     &lt;script src="javascript/midi/stream.js"&gt;&lt;/script&gt;
