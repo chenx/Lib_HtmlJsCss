@@ -17,7 +17,7 @@ Layout
 Midi
 -----
 * The MidiPlayer class can play midi music directly in HTML5 javascript, without any plugin such as QuickTime.
-* index.html demonstrates how to use it.
+* This has been created as a new project (and removed here): <a href="https://github.com/chenx/MidiPlayer">https://github.com/chenx/MidiPlayer</a>.
 
 Searchbox
 ------
