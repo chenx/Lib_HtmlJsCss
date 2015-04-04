@@ -1,6 +1,5 @@
 /**
- * Convert binary string to array. Not used by MidiPlayer so far, 
- * because IE8 and below do not support HTML5 Audio tag. 
+ * Convert binary string to array. 
  *
  * See:
  * [1] http://stackoverflow.com/questions/1919972/how-do-i-access-xhr-responsebody-for-binary-data-from-javascript-in-ie
