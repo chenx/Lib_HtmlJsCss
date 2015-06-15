@@ -26,8 +26,7 @@ Midi
 
 Multi-select dropdown list with checkbox
 -----
-* See <a href="https://github.com/ehynds/jquery-ui-multiselect-widget">jQuery UI Multiselect Widget</a>
-* <a href="https://github.com/chenx/Lib_HtmlJsCss/tree/master/multiselect/">Testing source code</a>
+* See <a href="https://github.com/ehynds/jquery-ui-multiselect-widget">jQuery UI Multiselect Widget</a>. [<a href="https://github.com/chenx/Lib_HtmlJsCss/tree/master/multiselect/">Testing source code</a>]
 
 Searchbox
 ------
