@@ -3,6 +3,11 @@ Lib_HtmlJsCss
 
 Library of html/js/css web components.
 
+Autocomplete
+------
+For Asp.net, just use <a href="http://ajaxcontroltoolkit.codeplex.com/">ajaxcontroltoolkit</a>.  
+<a href="http://www.c-sharpcorner.com/UploadFile/0c1bb2/autocomplete-extender-using-Asp-Net/">Creating AutoComplete Extender using ASP.NET</a>
+
 dashQuery
 ------
 
@@ -18,6 +23,10 @@ Midi
 -----
 * The MidiPlayer class can play midi music directly in HTML5 javascript, without any plugin such as QuickTime.
 * This has been moved to a new project: <a href="https://github.com/chenx/MidiPlayer">https://github.com/chenx/MidiPlayer</a>.
+
+Multi-select dropdown list with checkbox
+-----
+See <a href="https://github.com/ehynds/jquery-ui-multiselect-widget">jQuery UI Multiselect Widget</a>
 
 Searchbox
 ------
