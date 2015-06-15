@@ -5,8 +5,8 @@ Library of html/js/css web components.
 
 Autocomplete
 ------
-For Asp.net, just use <a href="http://ajaxcontroltoolkit.codeplex.com/">ajaxcontroltoolkit</a>.  
-<a href="http://www.c-sharpcorner.com/UploadFile/0c1bb2/autocomplete-extender-using-Asp-Net/">Creating AutoComplete Extender using ASP.NET</a>
+For asp.net, just use <a href="http://ajaxcontroltoolkit.codeplex.com/">ajaxcontroltoolkit</a>.  
+* <a href="http://www.c-sharpcorner.com/UploadFile/0c1bb2/autocomplete-extender-using-Asp-Net/">Creating AutoComplete Extender using ASP.NET</a>
 
 dashQuery
 ------
@@ -26,7 +26,7 @@ Midi
 
 Multi-select dropdown list with checkbox
 -----
-See <a href="https://github.com/ehynds/jquery-ui-multiselect-widget">jQuery UI Multiselect Widget</a>
+* See <a href="https://github.com/ehynds/jquery-ui-multiselect-widget">jQuery UI Multiselect Widget</a>
 
 Searchbox
 ------
