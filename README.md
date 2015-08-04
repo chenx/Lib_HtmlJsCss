@@ -16,7 +16,7 @@ dashQuery
 Image
 ------
 
-Demonstrates various manover of image:  
+Demonstrates various maneuver of image:  
 * Overlap text on image
 * DropCap letter
 * Show part of image (e.g., in case of icons) and clickable image map
