@@ -1,0 +1,62 @@
+<html>
+<head>
+
+<style type="text/css">
+.CoverImage
+{
+    background: url(cover.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='cover.jpg', sizingMethod='scale');
+    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='cover.jpg', sizingMethod='scale');
+    
+    max-width: 800px; 
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+}
+.DropCap {
+    float: left;
+    width: 0.7em;
+    font-size: 600%;
+    font-family: algerian, courier;
+    line-height: 80%;
+}
+#clip 
+{
+  position: absolute;
+  left: 0px;
+  clip: rect(0, 600px, 90px, 0);
+  /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */    
+}
+</style>
+</head>
+<body>
+
+<div class="CoverImage">
+       <p><span class="DropCap">H</span>ello, this demonstrates cover image (overlap text on image) and drop cap letter.</p>
+</div>
+
+<hr/>
+
+<div>
+<p>This demonstrates showing part of an image, with image map.
+</p>
+Entire image:<br/>
+<img src="social-media-icons.png" alt="Social media icons" border="0" width="300" />
+</div>
+<div>
+<p>Show part of image (with clickable image map):</p>
+          <img id="clip" src="social-media-icons.png" alt="Social media icons" border="0" width="300" usemap="#mapSocialMedia"/>
+          <map id="mapSocialMedia" name="mapSocialMedia">
+            <area shape="rect" coords="20,20,75,70" href="http://twitter.com" alt="Twitter" title="Twitter" />
+            <area shape="rect" coords="90,20,145,70" href="http://youtube.com" alt="Youtube" title="Youtube" />
+            <area shape="rect" coords="160,20,215,70" href="http://facebook.com" alt="Facebook" title="Facebook" />
+            <area shape="rect" coords="225,20,280,70" href="http://linkedin.com" alt="Linkedin" title="Linkedin" />
+          </map>
+</div>
+
+</body>
+</html>
