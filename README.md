@@ -17,9 +17,14 @@ Image
 ------
 
 Demonstrates various maneuver of image:  
+
+index.html:  
 * Overlap text on image
 * DropCap letter
 * Show part of image (e.g., in case of icons) and clickable image map
+ 
+cover.html:  
+* Cover entire screen background
 
 Layout
 ------
