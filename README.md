@@ -29,7 +29,7 @@ cover.html:
 image_hovers.html
 * Image hover effects. From: 
 * <a href="http://designshack.net/tutorialexamples/imagehovers/index.html">http://designshack.net/tutorialexamples/imagehovers/index.html</a>
-* <a href="http://designshack.net/articles/css/joshuajohnson-2/">http://designshack.net/articles/css/joshuajohnson-2/</a>
+* <a href="http://designshack.net/articles/css/joshuajohnson-2/">http://designshack.net/articles/css/joshuajohnson-2/</a> 
 
 Layout
 ------
