@@ -37,6 +37,13 @@ Layout
 * layout body contents horizontally [<a href="https://github.com/chenx/Lib_HtmlJsCss/blob/master/layout/center_body_horizontal.html">source</a>]
 * layout body contents both horizontally and vertically [<a href="https://github.com/chenx/Lib_HtmlJsCss/blob/master/layout/center_body_hori_vert.html">source</a>]
 
+
+Lightbox
+-----
+
+* <a href="http://lokeshdhakar.com/projects/lightbox2/">http://lokeshdhakar.com/projects/lightbox2/</a>
+
+
 Midi
 -----
 * The MidiPlayer class can play midi music directly in HTML5 javascript, without any plugin such as QuickTime.
