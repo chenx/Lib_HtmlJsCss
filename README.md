@@ -3,6 +3,10 @@ Lib_HtmlJsCss
 
 Library of html/js/css web components.
 
+React
+-----
+React experiment apps.
+
 Autocomplete
 ------
 For asp.net, just use <a href="http://ajaxcontroltoolkit.codeplex.com/">ajaxcontroltoolkit</a>.  
