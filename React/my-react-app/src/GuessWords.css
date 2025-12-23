@@ -1,0 +1,41 @@
+.guess-words-board {
+    margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.content > img {
+  height: 45vh;
+}
+
+.content > p {
+  font-size: 2rem;
+}
+
+.footer {
+  margin-bottom: 10vh;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+
+  border: solid 1px black;
+  text-align: center;
+  margin: 5px;
+  padding: 0;
+  display: inline-block;
+}
+
+.message {
+  margin-top: 5px;
+}

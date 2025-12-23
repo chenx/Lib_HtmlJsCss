@@ -1,0 +1,53 @@
+.text-input {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.text-area {
+    display: block;
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.div-row {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+}
+
+.color-item {
+    margin-right: 5px;
+}
+
+.div-display {
+    background-color: lightblue;
+}
+
+.row-title {
+    font-weight: bold;
+}
+
+.button {
+    margin-right: 10px;
+}
+
+.toast {
+    background-color: lightgreen;
+    border: solid 1px lightgreen;
+    border-radius: 5px;
+    display: block;
+    line-height: 30px;
+    height: 30px;
+}
+
+.toast-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.toast-visible {
+    visibility: visible;
+}

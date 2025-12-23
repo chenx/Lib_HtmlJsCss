@@ -1,0 +1,39 @@
+.warning {
+    color: red;
+}
+
+.title {
+    width: 200px;
+}
+
+.summary {
+    width: 400px;
+}
+
+.field {
+    height: 35px;
+    margin: 8px 8px 8px 0px;
+    padding: 4px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.6em 1.2em;
+    vertical-align: middle;
+}
+
+.button {
+    margin-right: 5px;
+}
+
+.input-error {
+    border-color: red;
+}
+
+.section-item {
+    text-align: left;
+}
+
+.btn-delete {
+    margin-left: 10px;
+    cursor: pointer;
+}
