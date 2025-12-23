@@ -5,7 +5,7 @@ Library of html/js/css web components.
 
 React
 -----
-React experiment apps.
+React experiment apps, in both JavaScript and TypeScript.
 
 Autocomplete
 ------
