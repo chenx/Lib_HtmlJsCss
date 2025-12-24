@@ -7,7 +7,7 @@ React
 -----
 React experiment apps, in both JavaScript and TypeScript.
 
-<img src="https://github.com/chenx/Lib_HtmlJsCss/blob/master/React/images/my-react-app.png?raw=true" style="height:40px; border: solid 1px black;"/>
+<img src="https://github.com/chenx/Lib_HtmlJsCss/blob/master/React/images/my-react-app.png?raw=true" style="height:100px; border: solid 1px black;"/>
 
 Autocomplete
 ------
