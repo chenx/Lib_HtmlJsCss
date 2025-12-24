@@ -7,6 +7,8 @@ React
 -----
 React experiment apps, in both JavaScript and TypeScript.
 
+<img src="https://github.com/chenx/Lib_HtmlJsCss/blob/master/React/images/my-react-app.png?raw=true" />
+
 Autocomplete
 ------
 For asp.net, just use <a href="http://ajaxcontroltoolkit.codeplex.com/">ajaxcontroltoolkit</a>.  
