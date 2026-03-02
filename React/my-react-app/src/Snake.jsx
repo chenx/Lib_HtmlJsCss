@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
 import Menu from './Menu.jsx'
-
 import './snake.css'
 
 
