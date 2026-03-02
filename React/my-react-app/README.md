@@ -39,6 +39,8 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ### Hungrey Snake
 
+This demos how to create a table of grids dynamically.
+
 <img width="349" height="422" alt="image" src="https://github.com/user-attachments/assets/bbe295a1-1b03-4fd9-af15-20557b53720a" />
 
 
