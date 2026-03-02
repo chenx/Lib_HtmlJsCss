@@ -18,6 +18,7 @@ import Menu from './Menu.jsx'
 import FormElements from './FormElements.jsx'
 import Home from './Home.jsx'
 import GuessWords from './GuessWords.jsx'
+import Snake from './Snake.jsx'
 
 // Can't persist data so far when switching page.
 function FormApp() {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: "/GuessWords",
     element: <GuessWords />
+  },
+  {
+    path: "/Snake",
+    element: <Snake />
   },
 ]);
 

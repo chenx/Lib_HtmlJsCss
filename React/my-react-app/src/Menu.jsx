@@ -18,6 +18,8 @@ export default function Menu() {
         <Link to="/FormElements">Form Elements</Link>
         <span> | </span>
         <Link to="/GuessWords">Guess Words</Link>
+        <span> | </span>
+        <Link to="/Snake">Snake</Link>
       </nav>
       <Outlet />
     </main>
