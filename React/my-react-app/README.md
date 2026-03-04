@@ -18,8 +18,9 @@ If you are developing a production application, we recommend using TypeScript wi
 <img width="534" height="249" alt="image" src="https://github.com/user-attachments/assets/45b81654-7659-4499-8f3c-7cc6d29edcea" />
 
 ### Redux Counter
-
-<img width="544" height="233" alt="image" style="border: solid 1px lightgray" src="https://github.com/user-attachments/assets/8456647d-42ca-4955-a155-5d9f6b04dc7f" />
+<kbd>
+<img width="544" height="233" alt="image" src="https://github.com/user-attachments/assets/8456647d-42ca-4955-a155-5d9f6b04dc7f" />
+</kbd>
 
 ### Tic Tac Toe
 
