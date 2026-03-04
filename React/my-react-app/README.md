@@ -19,7 +19,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ### Redux Counter
 
-<img width="544" height="233" alt="image" src="https://github.com/user-attachments/assets/8456647d-42ca-4955-a155-5d9f6b04dc7f" />
+<img width="544" height="233" alt="image" style="border: solid 1px lightgray" src="https://github.com/user-attachments/assets/8456647d-42ca-4955-a155-5d9f6b04dc7f" />
 
 ### Tic Tac Toe
 
