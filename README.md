@@ -8,7 +8,7 @@ React
 React experiment apps, in both JavaScript and TypeScript.
 
 <a href="https://github.com/chenx/Lib_HtmlJsCss/tree/master/React">
-<img src="https://github.com/chenx/Lib_HtmlJsCss/blob/master/React/images/my-react-app.png?raw=true" style="height:250px;"/>
+<img style="height:250;" src="https://github.com/user-attachments/assets/6e3a17ee-7ec7-4717-8a1d-af0145cbe444" />
 </a>
 
 Autocomplete
