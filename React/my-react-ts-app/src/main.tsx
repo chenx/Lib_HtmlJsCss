@@ -9,6 +9,7 @@ import Form from './Form.tsx'
 import FormElements from './FormElements.tsx'
 import TestApp from './TestApp.tsx'
 import Snake from './Snake.tsx'
+import GuessWords from './GuessWords.tsx'
 
 // import { useState } from 'react'
 // import type { FormField } from './MyContext.ts'
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
   {
     path: "/TestApp",
     element: <TestApp />
+  },
+  {
+    path: "/GuessWords",
+    element: <GuessWords />
   },
   {
     path: "/Snake",
