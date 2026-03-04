@@ -100,6 +100,11 @@ export default defineConfig([
 <img width="1135" height="490" alt="image" src="https://github.com/user-attachments/assets/53f04d14-daad-4ceb-a08b-50f3af127ad2" />
 </kbd>
 
+### Guess Words 2
+<kbd>
+<img width="347" height="535" alt="image" src="https://github.com/user-attachments/assets/7235d0df-b79a-4037-b2a8-6740641eb545" />
+</kbd>
+
 ### Hungrey Snake
 <kbd>
 <img width="349" height="422" alt="image" src="https://github.com/user-attachments/assets/bbe295a1-1b03-4fd9-af15-20557b53720a" />
