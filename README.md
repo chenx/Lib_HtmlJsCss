@@ -1,4 +1,4 @@
-Lib_Web_Components
+Web Components
 =============
 
 Library of web components.
