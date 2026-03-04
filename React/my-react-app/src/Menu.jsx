@@ -19,6 +19,8 @@ export default function Menu() {
         <span> | </span>
         <Link to="/GuessWords">Guess Words</Link>
         <span> | </span>
+        <Link to="/GuessWords2">Guess Words 2</Link>
+        <span> | </span>
         <Link to="/Snake">Snake</Link>
       </nav>
       <Outlet />
