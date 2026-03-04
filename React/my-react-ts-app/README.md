@@ -71,3 +71,36 @@ export default defineConfig([
   },
 ])
 ```
+
+
+## Screenshots of included Apps
+
+### Timer
+<kbd>
+<img width="534" height="249" alt="image" src="https://github.com/user-attachments/assets/45b81654-7659-4499-8f3c-7cc6d29edcea" />
+</kbd>
+
+### Redux Counter
+<kbd>
+<img width="544" height="233" alt="image" src="https://github.com/user-attachments/assets/8456647d-42ca-4955-a155-5d9f6b04dc7f" />
+</kbd>
+
+### Tic Tac Toe
+<kbd>
+<img width="497" height="273" alt="image" src="https://github.com/user-attachments/assets/f032a1dd-b06b-4f8c-9dac-3fc8adbda6e4" />
+</kbd>
+
+### Form
+<kbd>
+<img width="949" height="277" alt="image" src="https://github.com/user-attachments/assets/ff3ccee3-32b1-411f-a2d2-286827db25f1" />
+</kbd>
+
+### Form (2)
+<kbd>
+<img width="1135" height="490" alt="image" src="https://github.com/user-attachments/assets/53f04d14-daad-4ceb-a08b-50f3af127ad2" />
+</kbd>
+
+### Hungrey Snake
+<kbd>
+<img width="349" height="422" alt="image" src="https://github.com/user-attachments/assets/bbe295a1-1b03-4fd9-af15-20557b53720a" />
+</kbd>
