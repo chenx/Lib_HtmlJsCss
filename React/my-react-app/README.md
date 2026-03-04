@@ -37,6 +37,10 @@ If you are developing a production application, we recommend using TypeScript wi
 
 <img width="360" height="521" alt="image" src="https://github.com/user-attachments/assets/1fb42083-be1d-424b-8e8c-f631108693e0" />
 
+### Guess Words 2
+
+<img width="347" height="535" alt="image" src="https://github.com/user-attachments/assets/7235d0df-b79a-4037-b2a8-6740641eb545" />
+
 ### Hungrey Snake
 
 <img width="349" height="422" alt="image" src="https://github.com/user-attachments/assets/bbe295a1-1b03-4fd9-af15-20557b53720a" />
