@@ -1,7 +1,7 @@
-Lib_HtmlJsCss
+Lib_Web_Components
 =============
 
-Library of html/js/css web components.
+Library of web components.
 
 React
 -----
