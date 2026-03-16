@@ -17,10 +17,7 @@ function TimerApp() {
 
   useEffect(() => {
     intervalRef.current = setInterval(() => {
-      const date = new Date()
-      const datetime = date.getHours() + ":" +
-      date.getMinutes() + ":" + date.getSeconds();
-      setCurTime(datetime)
+      setCurTime(new Date().toLocaleString())
     }, 1000)
 
     return () => clearInterval(intervalRef.current)
