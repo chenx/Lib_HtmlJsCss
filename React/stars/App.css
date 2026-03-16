@@ -1,0 +1,11 @@
+body {
+  background-color: white;
+}
+
+.star-panel {
+  margin: 30px
+}
+
+.star {
+  font-size: 30px;
+}
