@@ -2,17 +2,18 @@ import {useState, useEffect} from 'react'
 import Menu from './Menu.jsx'
 import './GuessWords.css'
 
-interface BoardConfig {
-    rows: number,
-    cols: number,
-    score: number,
-}
+// interface BoardConfig {
+//     rows: number,
+//     cols: number,
+//     score: number,
+// }
 
-interface ControlPanelConfig {
-    onResetGame: () => void
-}
+// interface ControlPanelConfig {
+//     onResetGame: () => void
+// }
 
-function Board({rows, cols, score} : BoardConfig) {
+// function Board({rows, cols, score} : BoardConfig) {
+function Board({rows, cols, score} : {rows: number, cols: number, score: number}) {
     const createTable = (rows: number, cols: number) => {
         const table = []
         for (let i = 0; i < rows; ++ i) {
@@ -42,7 +43,8 @@ function Board({rows, cols, score} : BoardConfig) {
     )
 }
 
-function ControlPanel({onResetGame}: ControlPanelConfig) {
+// function ControlPanel({onResetGame}: ControlPanelConfig) {
+function ControlPanel({onResetGame}: {onResetGame: () => void}) {
     return (
         <div>
             <button onClick={onResetGame}>Reset Game</button>
