@@ -4,4 +4,4 @@
 
 # Timer2
 
-<img width="310" height="86" alt="image" src="https://github.com/user-attachments/assets/0577a034-441e-4f4e-b253-b993e0dc5ded" />
+<img width="365" height="77" alt="image" src="https://github.com/user-attachments/assets/3d5fb322-a82e-4585-8e15-41802f8ec550" />
