@@ -16,6 +16,7 @@ export default function App() {
       // console.log(json['info'])
       // console.log(json['info']['count'])
       // console.log(json['info']['totalPages'])
+      // console.log(json.info.totalPages) // this also works.
       // console.log(json['data'])
       // console.log(json['data'][0]['name'])
       // console.log(json['data'][0]['imageUrl'])
