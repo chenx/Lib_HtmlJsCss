@@ -18,7 +18,7 @@ export default function App() {
     const tasks = []
     for (let i = 0; i < toDoList.length; ++ i) {
       tasks.push(
-        <div key={i}>
+        <div key={i} style={{backgroundColor: i % 2 === 0 ? 'orange' : ''}}>
           <input type="checkbox" title="Completed" />
           {toDoList[i]}
           <button onClick={() => deleteTask(i)}>Delete</button>
