@@ -7,20 +7,20 @@ type BoardConfig = {
     score: number,
     count: number,
     values: string[],
-    foundArray: string[],
+    foundRows: string[],
 }
 
 type ControlPanelConfig = {
     onResetGame: () => void
 }
 
-function Board({rows, cols, score, count, values, foundArray} : BoardConfig) {
+function Board({rows, cols, score, count, values, foundRows} : BoardConfig) {
     const createTable = (rows: number, cols: number) => {
         const table = []
         for (let i = 0; i < rows; ++ i) {
             const row = []
             for (let j = 0; j < cols; ++ j) {
-                const color = foundArray[i] === 'FOUND' ? 'green' : foundArray[i] === 'NOT_FOUND' ? 'red' : ''
+                const color = foundRows[i] === 'FOUND' ? 'green' : foundRows[i] === 'NOT_FOUND' ? 'red' : ''
                 row.push(
                   <td className="cell" key={`col-${i}-${j}`}
                     style={{backgroundColor: color}}
@@ -70,7 +70,7 @@ export default function TestApp() {
     const [state, setState] = useState('GAME_ON')
     const [score, setScore] = useState(0)
     const [values, setValues] = useState(new Array(TOTAL).fill(''))
-    const [foundArray, setFoundArray] = useState(new Array(ROWS).fill(''))
+    const [foundRows, setFoundRows] = useState(new Array(ROWS).fill(''))
 
     useEffect(() => {
         const handleKeyboardEvent = (event: React.KeyboardEvent<HTMLElement> | KeyboardEvent) => {
@@ -91,18 +91,18 @@ export default function TestApp() {
 
                     const found = dict.has(word)
                     const row = Math.floor(count / COLS)
-                    const newFoundArray = [...foundArray]
+                    const newfoundRows = [...foundRows]
                     if (found) {
                         setScore(score => score + 10)
                         const newDict = new Set(dict)
                         newDict.delete(word)
                         setDict(newDict)
 
-                        newFoundArray[row] = 'FOUND'
+                        newfoundRows[row] = 'FOUND'
                     } else {
-                        newFoundArray[row] = 'NOT_FOUND'
+                        newfoundRows[row] = 'NOT_FOUND'
                     }
-                    setFoundArray(newFoundArray)
+                    setFoundRows(newfoundRows)
 
                     if (newCount == TOTAL) {
                         setState('GAME_OFF')
@@ -126,12 +126,12 @@ export default function TestApp() {
         setScore(0)
         setDict(new Set(DICTIONARY))
         setValues(new Array(TOTAL).fill(''))
-        setFoundArray(new Array(ROWS).fill(''))
+        setFoundRows(new Array(ROWS).fill(''))
     }
 
     return (
         <>
-            <Board rows={ROWS} cols={COLS} score={score} count={count} values={values} foundArray={foundArray}></Board>
+            <Board rows={ROWS} cols={COLS} score={score} count={count} values={values} foundRows={foundRows}></Board>
             <ControlPanel onResetGame={onResetGame}></ControlPanel>
             <div className="msg">{state === 'GAME_ON' ? '' : 'Game Over. Press "Reset Game" to restart.'}</div>
         </>        
