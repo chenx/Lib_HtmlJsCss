@@ -19,7 +19,7 @@ export default function App() {
       return (
         <tr key={start + i + 1}>
           <td style={{width: '10px'}} >{start + i + 1}.</td>
-          <td style={{width: '300px'}} >{item.name}</td>
+          <td style={{textAlign: 'left', width: '300px'}} >{item.name}</td>
           <td><img src={item.imageUrl} style={{width: '100px'}} /></td>
         </tr>
       )
