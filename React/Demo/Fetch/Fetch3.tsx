@@ -29,7 +29,7 @@ export default function App() {
     setDataList([...dataList, ...list])
     setLoading(false)
 
-    // if (page < totalPages) {
+    // if (page < json.info.totalPages) {
     if (page < 3) {
       setPage(page => page + 1)
     }
