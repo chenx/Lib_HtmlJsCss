@@ -7,3 +7,4 @@ https://github.com/topics/react-example
 - useRef
 - useCallback
 - useContext
+- useMemo
