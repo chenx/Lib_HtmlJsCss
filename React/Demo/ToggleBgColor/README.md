@@ -8,6 +8,6 @@
 
 <div>
 <kbd>
-<img width="343" height="53" alt="image" src="https://github.com/user-attachments/assets/cb62bce5-27cc-46fd-96b8-951c41795ca0" />
+<img width="368" height="75" alt="image" src="https://github.com/user-attachments/assets/bedcda8d-cc3e-4d5d-ba53-f2d23747f8d9" />
 </kbd>
 </div>
