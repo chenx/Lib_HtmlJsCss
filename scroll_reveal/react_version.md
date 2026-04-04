@@ -96,7 +96,7 @@ export default function Home() {
           <h1>About</h1>
         </FadeIn>
         <FadeIn delay={0.2}>
-          <p>This is a Hygo-style scroll animation layout.</p>
+          <p>This is a OpenArt-style scroll animation layout.</p>
         </FadeIn>
       </Section>
 
@@ -210,9 +210,9 @@ export default function RootLayout({ children }) {
 }
 ```
 
-🚀 Upgrade to “true Hygo-level” (optional)
+🚀 Upgrade to “true OpenArt-level” (optional)
 
-If you want the premium feel like Hygo, next steps are:
+If you want the premium feel like OpenArt, next steps are:
 
 🔥 Add GSAP + ScrollTrigger
 ```
