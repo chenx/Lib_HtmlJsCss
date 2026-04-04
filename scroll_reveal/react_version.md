@@ -1,4 +1,4 @@
-Here’s a React / Next.js version of the Hygo-style landing page with clean structure, reusable components, and scroll-triggered animations using the native Intersection Observer.
+Here’s a React / Next.js version of the scroll-reveal-style landing page with clean structure, reusable components, and scroll-triggered animations using the native Intersection Observer.
 
 I’ll show it in Next.js App Router (modern setup).
 
