@@ -2,7 +2,7 @@
 
 How to build a page with dynamic effect of showing page elements ease-in when scrolling down.
 
-This is commonly called a scroll-triggered animation (or “scroll reveal”). Sites like OpenArt use this to fade/slide elements into view as you scroll.
+This is commonly called a scroll-triggered animation (or “scroll reveal”). Sites use this to fade/slide elements into view as you scroll.
 
 ## Example
 
