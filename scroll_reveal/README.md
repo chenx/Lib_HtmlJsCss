@@ -1,8 +1,14 @@
-# HTML page ease-in when scroll: scroll-triggered animation (or “scroll reveal”)
+# Page ease-in when scroll: scroll-triggered animation (“scroll reveal”)
 
-how to build a page with dynamic effect as hygo.com or openart.com? The dynamic effect is that show page elements ease-in when scrolling down
+How to build a page with dynamic effect as hygo.com or openart.com? The dynamic effect is that show page elements ease-in when scrolling down.
 
 What you’re describing is commonly called a scroll-triggered animation (or “scroll reveal”). Sites like Hygo use this to fade/slide elements into view as you scroll.
+
+## Example
+
+https://chenx.github.io/scroll_reveal/ (<a href="https://github.com/chenx/chenx.github.io/blob/main/docs/scroll_reveal/index.html">src</a>)
+
+## How
 
 There are three main ways to build it, from simple to advanced:
 
