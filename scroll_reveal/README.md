@@ -1,8 +1,8 @@
 # Page ease-in when scroll: scroll-triggered animation (“scroll reveal”)
 
-How to build a page with dynamic effect as hygo.com or openart.com? The dynamic effect is that show page elements ease-in when scrolling down.
+How to build a page with dynamic effect of showing page elements ease-in when scrolling down.
 
-What you’re describing is commonly called a scroll-triggered animation (or “scroll reveal”). Sites like Hygo use this to fade/slide elements into view as you scroll.
+What you’re describing is commonly called a scroll-triggered animation (or “scroll reveal”). Sites use this to fade/slide elements into view as you scroll.
 
 ## Example
 
@@ -60,8 +60,9 @@ elements.forEach(el => observer.observe(el));
 Elements start hidden (opacity 0 + moved down)
 When they enter viewport → .show is added
 CSS transition creates the “ease-in” effect
-🎯 2. Add staggered animations (like Hygo)
 ```
+
+🎯 2. Add staggered animations (like Hygo)
 
 To get that polished feel where elements appear one after another:
 
