@@ -2,7 +2,7 @@
 
 How to build a page with dynamic effect of showing page elements ease-in when scrolling down.
 
-What you’re describing is commonly called a scroll-triggered animation (or “scroll reveal”). Sites use this to fade/slide elements into view as you scroll.
+This is commonly called a scroll-triggered animation (or “scroll reveal”). Sites like OpenArt use this to fade/slide elements into view as you scroll.
 
 ## Example
 
@@ -62,7 +62,7 @@ When they enter viewport → .show is added
 CSS transition creates the “ease-in” effect
 ```
 
-🎯 2. Add staggered animations (like Hygo)
+🎯 2. Add staggered animations (like OpenArt)
 
 To get that polished feel where elements appear one after another:
 
@@ -74,7 +74,7 @@ elements.forEach((el, index) => {
 
 🚀 3. Use a library (faster, more powerful)
 
-If you want Hygo-level polish, use animation libraries:
+If you want OpenArt-level polish, use animation libraries:
 
 ⭐ Option A: AOS (Animate On Scroll)
 
@@ -103,7 +103,7 @@ gsap.from(".fade-in", {
 });
 ```
 
-✨ 4. Extra effects used on Hygo-style sites
+✨ 4. Extra effects used on OpenArt-style sites
 
 To match that feel, combine:
 
